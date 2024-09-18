@@ -15,9 +15,9 @@
 <body>
 <h1>Main</h1><br>
 <section>
-  <h2>Introduction {{introString}}</h2><br>
+  <h2>Introduction to me!</h2><br>
   <p>
-    My name is {{myName}} I am 24-year-old male. I was born on December 21st, 1999, in
+    My name is Giovanni Shamoon I am 24-year-old male. I was born on December 21st, 1999, in
     Toronto, Ontario. When I was born my only sibling was my older sister. We lived in Toronto
     for the next 4 years and later moved to Windsor, Ontario before my brother was born. My siblings
     and I all went to the same schools however, we developed different hobbies the thing I felt every
@@ -29,6 +29,16 @@
     at this and enjoy it enough to make it my career. Ever since then most things I have done have been
     done to get closer to that goal or to get closer to doing something special with a car.
   </p><br>
+  <div class = "container">
+    <p *ngIf="!bikeList[6].streetLegal">Motorcycle List:</p>
+    <div *ngFor = "let bikes of bikeList">
+      <p>{{bikes.id}}
+      {{bikes.make}}
+      {{bikes.model}}
+      {{bikes.year}}
+        {{bikes.streetLegal}}</p>
+    </div>
+  </div>
 </section>
 </body>
 <footer>
