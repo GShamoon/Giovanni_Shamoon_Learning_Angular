@@ -11,5 +11,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   introString:string = "to me!";
   myName = "Giovanni Shamoon";
-  // title = 'LearningAngular';
+  title = 'LearningAngular';
 }
