@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import {Motorcycles} from "../Shared/Modules/motorcycles";
 import {BikeListItemComponent} from "../bike-list-item/bike-list-item.component";
+import {NgClass, NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-bike-list',
   standalone: true,
   imports: [
-    BikeListItemComponent
+    BikeListItemComponent, NgForOf, NgIf, NgClass
   ],
   templateUrl: './bike-list.component.html',
   styleUrl: './bike-list.component.css'
