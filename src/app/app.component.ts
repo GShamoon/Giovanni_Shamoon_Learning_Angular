@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {Motorcycles} from "./Shared/Modules/motorcycles";
 import {JsonPipe, NgForOf, NgIf} from "@angular/common";
+import {BikeListComponent} from "./bike-list/bike-list.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, JsonPipe, NgForOf, NgIf],
+  imports: [RouterOutlet, JsonPipe, NgForOf, NgIf, BikeListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
