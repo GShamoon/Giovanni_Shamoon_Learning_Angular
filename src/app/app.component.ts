@@ -23,7 +23,7 @@ export class AppComponent {
   bike: Motorcycles | undefined;
 
   ngOnInit(): void {
-    this.motorcycleService.getBikeById(2).subscribe((bike) => {
+    this.motorcycleService.getBikeById(7).subscribe((bike) => {
       this.bike = bike
     })
   }
