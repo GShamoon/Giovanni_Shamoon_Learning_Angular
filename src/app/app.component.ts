@@ -14,7 +14,7 @@ import {bikeList} from "./Shared/mock-motorcycles";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
 
 
   constructor(private motorcycleService: MotorcycleService) {
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
   bike: Motorcycles | undefined;
 
   ngOnInit(): void {
-    this.motorcycleService.getBikeById(7).subscribe((bike) => {
+    this.motorcycleService.getBikeById(2).subscribe((bike) => {
       this.bike = bike
     })
   }
