@@ -14,7 +14,16 @@ import {MotorcycleService} from "../motorcycle.service";
   styleUrl: './bike-list.component.css'
 })
 export class BikeListComponent {
-  constructor(private MotorcycleService: MotorcycleService) {
+  bikeList: Motorcycles [] = [];
+  constructor(private motorcycleService: MotorcycleService) {
+  }
+
+  ngOnInit(){
+    this.motorcycleService.getBikeList().subscribe({
+      next: (data: Motorcycles[]) => this.bikeList = data,
+      error: err => console.error("There was an error fetching Motorcycles"),
+      complete: () => console.log("Motorcycle data fetch complete")
+    })
   }
   // bike4: Motorcycles = {id: 4, make: "Kawasaki", model: "Ninja H2R", year: 2016, streetLegal: false};
   // bike5: Motorcycles = {id: 5, make: "Trident", model: "Trident 660", year: 2023, streetLegal: true};
