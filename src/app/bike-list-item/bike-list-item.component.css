@@ -1,0 +1,26 @@
+.component-container {
+  border: 2px solid black;
+  padding: 16px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for contrast */
+  max-width: 400px; /* Limit the width of the container */
+  margin: 20px auto; /* Center the container horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.title {
+  font-size: 24px; /* Larger font for the title */
+  font-weight: bold; /* Bold title */
+  color: #333; /* Dark color for contrast */
+  margin-bottom: 12px; /* Space below the title */
+}
+
+.list-item {
+  font-size: 18px; /* Font size for list items */
+  color: #555; /* Medium color for text */
+  margin: 8px 0; /* Space between list items */
+}
+
+.list-item:first-child {
+  margin-top: 12px; /* Extra space for the first list item */
+}

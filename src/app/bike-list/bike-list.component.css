@@ -1,4 +1,4 @@
-.odd{
+/*.odd{
   background-color: aquamarine;
   display: block;
 }
@@ -6,4 +6,4 @@
 .even{
   background-color: magenta;
   display: block;
-}
+} Not needed anymore on AS 4 as per Matt*/
