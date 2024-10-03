@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Motorcycles} from "./Shared/Modules/motorcycles";
+import {Motorcycles} from "./Shared/Models/motorcycles";
 import {bikeList} from "./Shared/mock-motorcycles";
 import {Observable, of} from "rxjs";
 

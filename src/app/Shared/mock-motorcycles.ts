@@ -1,4 +1,4 @@
-import {Motorcycles} from "./Modules/motorcycles";
+import {Motorcycles} from "./Models/motorcycles";
 
 export const bikeList: Motorcycles[] = [
   {id: 1, make: "Ducati", model: "Panigale V4", year: 2020, streetLegal: true},

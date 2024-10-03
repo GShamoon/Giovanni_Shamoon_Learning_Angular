@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Motorcycles} from "../Shared/Modules/motorcycles";
+import {Motorcycles} from "../Shared/Models/motorcycles";
 import {BikeListItemComponent} from "../bike-list-item/bike-list-item.component";
 import {NgClass, NgForOf, NgIf} from "@angular/common";
 import {MotorcycleService} from "../motorcycle.service";

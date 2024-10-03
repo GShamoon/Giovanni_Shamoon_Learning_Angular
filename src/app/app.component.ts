@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {Motorcycles} from "./Shared/Modules/motorcycles";
+import {Motorcycles} from "./Shared/Models/motorcycles";
 import {JsonPipe, NgForOf, NgIf} from "@angular/common";
 import {BikeListComponent} from "./bike-list/bike-list.component";
 import {BikeListItemComponent} from "./bike-list-item/bike-list-item.component";
