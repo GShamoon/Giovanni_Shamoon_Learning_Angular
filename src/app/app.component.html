@@ -1,2 +1,8 @@
-<app-bike-list-item [bikeListItem]="bike"></app-bike-list-item>
-<app-bike-list></app-bike-list>
+<!--<app-bike-list-item [bikeListItem]="bike"></app-bike-list-item>-->
+<!--<app-bike-list></app-bike-list>-->
+<nav class = "navbar">
+  <a routerLink = "bikes" routerLinkActive = "Active">Bike List</a>
+  <a routerLink = "modify-bike" routerLinkActive = "Active">Modify Bike</a>
+  <a routerLink = "**" routerLinkActive = "Active">404 Page not found</a>
+</nav>
+<router-outlet></router-outlet>

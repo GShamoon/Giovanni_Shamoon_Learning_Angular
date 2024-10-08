@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {Motorcycles} from "./Shared/Modules/motorcycles";
 import {JsonPipe, NgForOf, NgIf} from "@angular/common";
 import {BikeListComponent} from "./bike-list/bike-list.component";
@@ -10,7 +10,7 @@ import {bikeList} from "./Shared/mock-motorcycles";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, JsonPipe, NgForOf, NgIf, BikeListComponent, BikeListItemComponent],
+  imports: [RouterOutlet, JsonPipe, NgForOf, NgIf, BikeListComponent, BikeListItemComponent, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
