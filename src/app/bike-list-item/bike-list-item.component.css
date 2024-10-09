@@ -8,6 +8,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
+img {
+  /*float: left;*/
+  min-width: 1vw;
+  min-height: 1vh;
+}
+
 .title {
   font-size: 24px; /* Larger font for the title */
   font-weight: bold; /* Bold title */

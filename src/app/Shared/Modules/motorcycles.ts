@@ -3,5 +3,6 @@ export interface Motorcycles {
   make: string,
   model: string,
   year: number,
-  streetLegal?: boolean
+  streetLegal?: boolean,
+  image?: string
 }
