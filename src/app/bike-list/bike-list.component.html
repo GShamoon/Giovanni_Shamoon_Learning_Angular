@@ -1,1 +1,3 @@
 <app-bike-list-item *ngFor = "let bike of bikeList; let index = index" [bikeListItem] = "bike" [ngClass]="{'even': index % 2 == 0, 'odd': index % 2 !=0}"></app-bike-list-item>
+<button type = "button" (click)="onDelete()">Delete</button>
+<button type = "button" (click)="onEdit()">Edit</button>

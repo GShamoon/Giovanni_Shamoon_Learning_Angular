@@ -1,1 +1,23 @@
-<p>modify-bike works!</p>
+<form [formGroup]="bikeForm">
+  <div>
+    <label for = "id">id: </label>
+    <input id = "id" type = "number" formControlName = "id">
+  </div>
+  <div>
+    <label for = "make">Make: </label>
+    <input id = "make" type = "text" formControlName = "make">
+  </div>
+  <div>
+    <label for = "model">Model: </label>
+    <input id = "model" type = "text" formControlName = "model">
+  </div>
+  <div>
+    <label for = "year">Year: </label>
+    <input id = "year" type = "number" formControlName = "year">
+  </div>
+  <div>
+    <label for = "streetLegal">Street Legal Status: </label>
+    <input id = "streetLegal" type = "checkbox" formControlName = "streetLegal">
+  </div>
+  <button type = "submit">Submit</button>
+</form>
