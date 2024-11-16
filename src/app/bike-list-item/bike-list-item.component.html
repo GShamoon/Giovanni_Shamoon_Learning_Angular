@@ -1,7 +1,7 @@
-<div style = "border: 2px solid black" class = 'component-container' >
-<h1 class = 'title'>Make: {{ bikeListItem?.make }}</h1>
-<h2 class = 'list-item'>Model: {{bikeListItem?.model}}</h2>
-<h2  class = 'list-item'>Year: {{bikeListItem?.year}}</h2>
-<h2  class = 'list-item'>Street Legal (true or false): {{bikeListItem?.streetLegal}}</h2>
-<img ngSrc = "{{bikeListItem?.image}}" alt = "{{bikeListItem?.model}}" width="400" height="400">
+<div style = "border: 2px solid black" class = 'component-container' *ngIf="bikeListItem">
+<h1 class = 'title'>Make: {{ bikeListItem.make | uppercase}}</h1>
+<h2 class = 'list-item'>Model: {{bikeListItem.model | lowercase}}</h2>
+<h2  class = 'list-item'>Year: {{bikeListItem.year | date}}</h2>
+<h2  class = 'list-item'>Street Legal (true or false): {{bikeListItem.streetLegal}}</h2>
+<img ngSrc = "{{bikeListItem.image}}" alt = "{{bikeListItem.model}}" width="400" height="400">
 </div>
