@@ -30,3 +30,11 @@ img {
 .list-item:first-child {
   margin-top: 12px; /* Extra space for the first list item */
 }
+
+.yellow>div{
+  background-color: red;
+}
+
+.white>div{
+  background-color: black;
+}

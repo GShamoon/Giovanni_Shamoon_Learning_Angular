@@ -11,15 +11,15 @@ export class MotorcycleService {
   constructor() { }
 
   getBikeList(): Observable<Motorcycles[]>{
-    return of(bikeList)
+    return of(this.bikeList)
   }
   getBikeById(bikeId: number): Observable<Motorcycles | undefined>{
     const bike = this.bikeList.find(bike => bike.id === bikeId);
     return of(bike)
   }
-  createBike(newBike: Motorcycles) : Observable<Motorcycles []>{
+  createBike(newBike: Motorcycles) : Observable<Motorcycles>{
     this.bikeList.push(newBike)
-    return of(this.bikeList);
+    return of(newBike);
   }
   updateBike(updatedBike: Motorcycles): Observable<Motorcycles[]> {
     const index = this.bikeList.findIndex(bike => bike.id === updatedBike.id);

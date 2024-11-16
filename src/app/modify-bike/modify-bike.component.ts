@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {MotorcycleService} from "../motorcycle.service";
 import {Router} from "@angular/router";
+import {Motorcycles} from "../Shared/Modules/motorcycles";
 
 @Component({
   selector: 'app-modify-bike',
@@ -23,5 +24,19 @@ export class ModifyBikeComponent {
       year: ['', Validators.required],
       streetLegal: [false]
     });
+  }
+
+  onAdd(){
+    const bike: Motorcycles = this.bikeForm.value;
+    this.MotorcycleService.createBike(bike);
+    this.router.navigate(['/bikes'])
+  }
+
+  onUpdate(){
+    const bike: Motorcycles = this.bikeForm.value;
+    if (bike.id){
+      this.MotorcycleService.updateBike(bike)
+      this.router.navigate(['/bikes'])
+    }
   }
 }

@@ -1,9 +1,7 @@
-/*.odd{
-  background-color: aquamarine;
-  display: block;
+.yellow{
+  background-color: red;
 }
 
-.even{
-  background-color: magenta;
-  display: block;
-} Not needed anymore on AS 4 as per Matt*/
+.white{
+  background-color: black;
+}

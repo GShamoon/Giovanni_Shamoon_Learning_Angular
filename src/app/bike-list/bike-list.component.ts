@@ -28,12 +28,23 @@ export class BikeListComponent {
     })
   }
 
+  selectedBike?: Motorcycles;
+  activeClass?: boolean = false;
+
+  selectBike(bike: Motorcycles){
+    this.selectedBike = bike;
+    this.activeClass = !this.activeClass;
+  }
+
   onEdit(){
     this.router.navigate(["modify-bike"])
   }
 
   onDelete(){
-
+    if (this.selectedBike != null){
+      this.motorcycleService.deleteBike(this.selectedBike.id);
+      this.bikeList = this.bikeList.filter(bike=>bike.id !== this.selectedBike?.id);
+    }
   }
   // bike4: Motorcycles = {id: 4, make: "Kawasaki", model: "Ninja H2R", year: 2016, streetLegal: false};
   // bike5: Motorcycles = {id: 5, make: "Trident", model: "Trident 660", year: 2023, streetLegal: true};
