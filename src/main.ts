@@ -9,9 +9,9 @@ import {PageNotFoundComponent} from "./app/page-not-found/page-not-found.compone
 const routes: Routes = [
   {path:'', redirectTo: '/bikes', pathMatch: 'full'}, //default route
   { path: 'bikes', component: BikeListComponent },
-  { path: 'bikes/:id', component: BikeListItemComponent },
-  { path: 'modify-bike', component: ModifyBikeComponent},
-  { path: '**', component: PageNotFoundComponent}]
+  { path: 'bikes/:id', loadComponent: () => import('./app/bike-list-item/bike-list-item.component').then(m=>m.BikeListItemComponent)},
+  { path: 'modify-bike', loadComponent: () => import('./app/modify-bike/modify-bike.component').then(m=>m.ModifyBikeComponent)},
+  { path: '**', loadComponent: () => import('./app/page-not-found/page-not-found.component').then(m=>m.PageNotFoundComponent)}]
 
 bootstrapApplication(AppComponent, {providers:[provideRouter(routes)]})
   .catch((err) => console.error(err));
