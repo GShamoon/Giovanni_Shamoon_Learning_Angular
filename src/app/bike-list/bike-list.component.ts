@@ -4,12 +4,13 @@ import {BikeListItemComponent} from "../bike-list-item/bike-list-item.component"
 import {NgClass, NgForOf, NgIf} from "@angular/common";
 import {MotorcycleService} from "../motorcycle.service";
 import {Router, RouterLink} from "@angular/router";
+import {HoverHighlightDirective} from "../directive/hover-highlight.directive";
 
 @Component({
   selector: 'app-bike-list',
   standalone: true,
   imports: [
-    BikeListItemComponent, NgForOf, NgIf, NgClass, RouterLink
+    BikeListItemComponent, NgForOf, NgIf, NgClass, RouterLink, HoverHighlightDirective
   ],
   templateUrl: './bike-list.component.html',
   styleUrl: './bike-list.component.css'

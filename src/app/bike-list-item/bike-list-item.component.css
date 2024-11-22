@@ -17,13 +17,13 @@ img {
 .title {
   font-size: 24px; /* Larger font for the title */
   font-weight: bold; /* Bold title */
-  color: #333; /* Dark color for contrast */
+  /*color: #333; !* Dark color for contrast *!*/
   margin-bottom: 12px; /* Space below the title */
 }
 
 .list-item {
   font-size: 18px; /* Font size for list items */
-  color: #555; /* Medium color for text */
+  /*color: #555; !* Medium color for text *!*/
   margin: 8px 0; /* Space between list items */
 }
 
