@@ -4,7 +4,7 @@ import {BikeListItemComponent} from "../bike-list-item/bike-list-item.component"
 import {NgClass, NgForOf, NgIf} from "@angular/common";
 import {MotorcycleService} from "../motorcycle.service";
 import {Router, RouterLink} from "@angular/router";
-import {HoverHighlightDirective} from "../directive/hover-highlight.directive";
+import {HoverHighlightDirective} from "../directives/hover-highlight.directive";
 
 @Component({
   selector: 'app-bike-list',

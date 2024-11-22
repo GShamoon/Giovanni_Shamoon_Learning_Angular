@@ -12,13 +12,12 @@ export class HoverHighlightDirective {
   @Input() appHoverHighlight = "";
 
 
-
-  @HostListener('mouseenter') onMouseEnter(){
+  @HostListener("mouseenter") onMouseEnter(){
     this.highlightColor(this.appHoverHighlight || "orange");
   }
 
 
-  @HostListener('mouseleave') onMouseLeave(){
+  @HostListener("mouseleave") onMouseLeave(){
     this.highlightColor("");
   }
 

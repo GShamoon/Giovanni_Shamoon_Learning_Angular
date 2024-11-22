@@ -3,12 +3,14 @@ import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 import {MotorcycleService} from "../motorcycle.service";
 import {Router} from "@angular/router";
 import {Motorcycles} from "../Shared/Modules/motorcycles";
+import {FocusStyleDirective} from "../directives/focus-style.directive";
 
 @Component({
   selector: 'app-modify-bike',
   standalone: true,
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FocusStyleDirective
   ],
   templateUrl: './modify-bike.component.html',
   styleUrl: './modify-bike.component.css'
