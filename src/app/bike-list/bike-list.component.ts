@@ -5,12 +5,20 @@ import {NgClass, NgForOf, NgIf} from "@angular/common";
 import {MotorcycleService} from "../motorcycle.service";
 import {Router, RouterLink} from "@angular/router";
 import {HoverHighlightDirective} from "../directives/hover-highlight.directive";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatButtonModule} from "@angular/material/button";
+import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatIconModule} from "@angular/material/icon";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 @Component({
   selector: 'app-bike-list',
   standalone: true,
   imports: [
-    BikeListItemComponent, NgForOf, NgIf, NgClass, RouterLink, HoverHighlightDirective
+    BikeListItemComponent, NgForOf, NgIf, NgClass, RouterLink, HoverHighlightDirective, MatButtonToggleModule, MatButtonModule, MatTooltipModule, MatCheckboxModule, MatRadioModule, MatBadgeModule, MatIconModule, MatProgressSpinnerModule
   ],
   templateUrl: './bike-list.component.html',
   styleUrl: './bike-list.component.css'

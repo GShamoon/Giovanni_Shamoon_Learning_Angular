@@ -4,4 +4,11 @@
 <h2  class = 'list-item'>Year: {{bikeListItem.year | date}}</h2>
 <h2  class = 'list-item'>Street Legal (true or false): {{bikeListItem | streetLegal}}</h2>
 <img ngSrc = "{{bikeListItem.image}}" alt = "{{bikeListItem.model}}" width="400" height="400">
+<button mat-button disabled>button that is disabled through mat-button</button>
+<mat-radio-button>this is a mat radio button</mat-radio-button>
+<mat-radio-button>this is another mat radio button</mat-radio-button>
+<mat-checkbox>this is a mat checkbox</mat-checkbox>
+  <div class = "badge">
+    <p matBadge = "1">mat-badge</p>
+  </div>
 </div>

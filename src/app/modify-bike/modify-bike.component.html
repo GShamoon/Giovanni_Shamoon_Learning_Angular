@@ -30,9 +30,18 @@
       id = "streetLegal" type = "checkbox" formControlName = "streetLegal">
   </div>
   <button
+    mat-button
     matTooltip="Click this button to add the bike with the values you entered"
     type = "button" (click)="onAdd()">Add</button>
   <button
+    mat-button disabled
     matTooltip="Click this button to update the bike with the values you entered"
     type = "button" (click)="onUpdate()">Update</button>
+  <p>update button disabled through mat-button</p>
+  <mat-radio-button>this is a mat radio button</mat-radio-button>
+  <mat-radio-button>this is another mat radio button</mat-radio-button>
+  <mat-checkbox>this is a mat checkbox</mat-checkbox>
+  <div class = "badge">
+    <p matBadge = "1">mat-badge</p>
+  </div>
 </form>

@@ -1,3 +1,10 @@
 <app-bike-list-item *ngFor = "let bike of bikeList; let index = index" [bikeListItem] = "bike" [ngClass]="activeClass ? 'yellow': 'white'" (click)="selectBike(bike)" [appHoverHighlight] = "'#01f9c6'"></app-bike-list-item>
-<button type = "button" (click)="onDelete()">Delete</button>
-<button type = "button" (click)="onEdit()">Edit</button>
+<button (click)="onDelete()">Delete</button>
+<button mat-button disabled (click)="onEdit()" matTooltip = "This button is disabled">Edit</button>
+<p>The edit button is disabled through mat-button</p>
+<mat-radio-button>this is a mat radio button</mat-radio-button>
+<mat-radio-button>this is another mat radio button</mat-radio-button>
+<mat-checkbox>this is a mat checkbox</mat-checkbox>
+<div class = "badge">
+<p matBadge = "1">mat-badge</p>
+</div>

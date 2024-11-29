@@ -6,11 +6,12 @@ import {BikeListComponent} from "./bike-list/bike-list.component";
 import {BikeListItemComponent} from "./bike-list-item/bike-list-item.component";
 import {MotorcycleService} from "./motorcycle.service";
 import {bikeList} from "./Shared/mock-motorcycles";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, JsonPipe, NgForOf, NgIf, BikeListComponent, BikeListItemComponent, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, JsonPipe, NgForOf, NgIf, BikeListComponent, BikeListItemComponent, RouterLink, RouterLinkActive, MatToolbarModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

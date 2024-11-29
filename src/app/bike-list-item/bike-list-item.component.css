@@ -38,3 +38,7 @@ img {
 .white>div{
   background-color: black;
 }
+
+.badge{
+  padding-right: 80%;
+}

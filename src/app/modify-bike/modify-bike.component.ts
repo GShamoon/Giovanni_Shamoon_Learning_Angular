@@ -6,6 +6,9 @@ import {Motorcycles} from "../Shared/Modules/motorcycles";
 import {FocusStyleDirective} from "../directives/focus-style.directive";
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from "@angular/material/button";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatBadgeModule} from "@angular/material/badge";
 
 @Component({
   selector: 'app-modify-bike',
@@ -14,7 +17,10 @@ import {MatButtonModule} from "@angular/material/button";
     ReactiveFormsModule,
     FocusStyleDirective,
     MatTooltipModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatBadgeModule
   ],
   templateUrl: './modify-bike.component.html',
   styleUrl: './modify-bike.component.css'
