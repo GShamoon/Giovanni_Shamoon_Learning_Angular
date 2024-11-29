@@ -4,13 +4,17 @@ import {MotorcycleService} from "../motorcycle.service";
 import {Router} from "@angular/router";
 import {Motorcycles} from "../Shared/Modules/motorcycles";
 import {FocusStyleDirective} from "../directives/focus-style.directive";
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatButtonModule} from "@angular/material/button";
 
 @Component({
   selector: 'app-modify-bike',
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    FocusStyleDirective
+    FocusStyleDirective,
+    MatTooltipModule,
+    MatButtonModule
   ],
   templateUrl: './modify-bike.component.html',
   styleUrl: './modify-bike.component.css'
